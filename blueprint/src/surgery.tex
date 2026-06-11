@@ -1,0 +1,34 @@
+\chapter{Ricci flow with surgery}
+
+\begin{definition}[Surgery spacetime]
+  \label{def:surgery-spacetime}
+  \lean{Poincare.Surgery.SurgerySpaceTime}
+  A surgery spacetime records regular flow regions, time slices and transition
+  data across surgery times.
+\end{definition}
+
+\begin{theorem}[Surgery preserves pinching]
+  \label{thm:surgery-preserves-pinching}
+  \lean{Poincare.Surgery.surgery_on_delta_neck}
+  \uses{def:surgery-spacetime, thm:canonical-neighborhood-theorem}
+  \notready
+  Performing surgery on a sufficiently controlled $\delta$-neck preserves the
+  pinching and canonical-neighborhood hypotheses needed to continue the flow.
+\end{theorem}
+
+\begin{theorem}[Surgery times are locally finite]
+  \label{thm:surgery-times-locally-finite}
+  \lean{Poincare.Surgery.surgeryTimes_locallyFinite}
+  \notready
+  Surgery times have no accumulation on compact time intervals.
+\end{theorem}
+
+\begin{theorem}[Long-time Ricci flow with surgery]
+  \label{thm:long-time-surgery-flow}
+  \lean{Poincare.Surgery.long_time_existence_with_surgery}
+  \uses{def:surgery-spacetime, thm:perelman-noncollapsing-with-surgery, thm:canonical-neighborhood-theorem, thm:surgery-preserves-pinching, thm:surgery-times-locally-finite}
+  \notready
+  Let $(M,g_0)$ be a closed Riemannian 3-manifold with the Morgan--Tian surgery
+  hypotheses. Then there is a Ricci flow with surgery starting from $(M,g_0)$,
+  defined for all $t \ge 0$.
+\end{theorem}

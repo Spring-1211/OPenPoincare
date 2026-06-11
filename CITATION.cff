@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "Poincaré Lean 4 Formalization Blueprint"
+message: "If you use this blueprint, please cite the repository and the Morgan--Tian source proof organization."
+type: software
+license: Apache-2.0
+authors:
+  - name: "Project contributors"
+version: 0.1.0
+date-released: 2026-06-11
+keywords:
+  - Lean 4
+  - mathlib
+  - Poincare conjecture
+  - Ricci flow
+  - formalization blueprint

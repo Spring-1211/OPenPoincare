@@ -1,0 +1,31 @@
+\chapter{Ricci flow}
+
+\begin{definition}[Ricci flow]
+  \label{def:ricci-flow}
+  \lean{Poincare.RicciFlow.RicciFlow}
+  A Ricci flow is a family of Riemannian metrics satisfying $\partial_t g=-2\Ric(g)$.
+\end{definition}
+
+\begin{definition}[Generalized Ricci flow]
+  \label{def:generalized-ricci-flow}
+  \lean{Poincare.RicciFlow.GeneralizedRicciFlow}
+  A generalized Ricci flow is the spacetime object used by Morgan--Tian to handle
+  regular regions of a surgery spacetime.
+\end{definition}
+
+\begin{theorem}[Short-time existence]
+  \label{thm:ricci-short-time-existence}
+  \lean{Poincare.RicciFlow.ricciFlow_shortTimeExistence_compact}
+  \uses{def:ricci-flow}
+  \notready
+  A compact initial metric admits a unique short-time Ricci flow.
+\end{theorem}
+
+\begin{theorem}[Hamilton compactness]
+  \label{thm:hamilton-compactness}
+  \lean{Poincare.RicciFlow.hamilton_compactness_ricciFlows}
+  \uses{thm:cheeger-gromov-compactness}
+  \notready
+  A sequence of based Ricci flows satisfying curvature derivative and
+  noncollapsing bounds has a smooth subsequential limit.
+\end{theorem}

@@ -1,0 +1,32 @@
+# Lean / Lake
+.lake/
+/build/
+*.olean
+*.ilean
+*.c
+*.o
+*.so
+*.dylib
+*.dll
+
+# Blueprint build artifacts
+blueprint/web/
+blueprint/print/
+blueprint/*.aux
+blueprint/*.log
+blueprint/*.out
+blueprint/*.toc
+blueprint/*.pdf
+blueprint/plastex.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Editors and OS
+.DS_Store
+.vscode/.lake/
+.idea/
+*.swp

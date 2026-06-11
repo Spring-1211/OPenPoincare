@@ -1,0 +1,30 @@
+name: Proof task
+description: Track a small no-sorry theorem or lemma proof
+title: "[proof] "
+labels: ["proof", "lean"]
+body:
+  - type: input
+    id: lean-name
+    attributes:
+      label: Lean declaration
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal state or statement
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Known dependencies
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: Builds with no new sorry; blueprint updated if needed.
+    validations:
+      required: true

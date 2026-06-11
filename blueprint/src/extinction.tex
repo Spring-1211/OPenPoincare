@@ -1,0 +1,36 @@
+\chapter{Finite-time extinction}
+
+\begin{definition}[Forward difference quotient]
+  \label{def:forward-difference-quotient}
+  \lean{Poincare.Extinction.ForwardDifferenceQuotient}
+  The forward difference quotient is used to encode upper Dini derivative
+  estimates through surgery times.
+\end{definition}
+
+\begin{theorem}[$W_2$ forward-difference inequality]
+  \label{thm:W2-forward-difference}
+  \lean{Poincare.Extinction.W2_forwardDifference_inequality}
+  \uses{def:forward-difference-quotient}
+  \notready
+  The minimal-area invariant for nontrivial $\pi_2$ satisfies the Morgan--Tian
+  forward-difference inequality.
+\end{theorem}
+
+\begin{theorem}[Loop-space width forward-difference inequality]
+  \label{thm:loop-space-width-forward-difference}
+  \lean{Poincare.Extinction.loopWidth_forwardDifference_inequality}
+  \uses{def:forward-difference-quotient}
+  \notready
+  Perelman's loop-space disk-width invariant satisfies the forward-difference
+  inequality needed to force extinction.
+\end{theorem}
+
+\begin{theorem}[Finite-time extinction]
+  \label{thm:finite-time-extinction}
+  \lean{Poincare.Extinction.finite_time_extinction}
+  \uses{thm:long-time-surgery-flow, thm:W2-forward-difference, thm:loop-space-width-forward-difference}
+  \notready
+  If the fundamental group is a free product of finite groups and infinite
+  cyclic groups, then every Ricci flow with surgery starting from $M$ becomes
+  extinct after finite time.
+\end{theorem}

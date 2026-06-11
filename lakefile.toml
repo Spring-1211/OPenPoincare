@@ -1,0 +1,22 @@
+name = "Poincare"
+version = "0.1.0"
+defaultTargets = ["Poincare"]
+license = "Apache-2.0"
+reservoir = false
+keywords = [
+  "lean",
+  "mathlib",
+  "formalization",
+  "poincare-conjecture",
+  "ricci-flow",
+  "3-manifold-topology",
+  "blueprint"
+]
+
+[[lean_lib]]
+name = "Poincare"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+version = "v4.31.0-rc2"

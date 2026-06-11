@@ -1,0 +1,64 @@
+\chapter{Three-manifold topology}
+
+\begin{definition}[Connected-sum expression]
+  \label{def:connected-sum-expression}
+  \lean{Poincare.Topology.ConnectedSumExpr, Poincare.Topology.RealizesConnectedSum}
+  A connected-sum expression is a finite formal expression built from atoms,
+  $\Sthree$, and a binary connected-sum operation.
+\end{definition}
+
+\begin{theorem}[Topological effect of surgery]
+  \label{thm:surgery-topological-effect}
+  \lean{Poincare.Topology.surgery_topological_effect}
+  \uses{def:connected-sum-expression}
+  \notready
+  Crossing a surgery time changes a time slice by finitely many ordinary
+  $S^2$-surgeries, hence by partial connected-sum decomposition and removal of
+  components diffeomorphic to the standard types listed in Morgan--Tian
+  Theorem 0.3.
+\end{theorem}
+
+\begin{theorem}[Extinction implies connected-sum classification]
+  \label{thm:extinction-to-connected-sum-classification}
+  \lean{Poincare.Topology.extinction_to_connected_sum_classification}
+  \uses{thm:surgery-topological-effect}
+  \notready
+  Suppose a Ricci flow with surgery starting from a closed connected 3-manifold
+  becomes extinct after finitely many surgery/removal steps. If every surgery has
+  the topological effect above, then the initial manifold is a connected sum of
+  the standard removed component types.
+\end{theorem}
+
+\begin{proof}
+  Induct backward from the empty final time slice. Each inverse surgery step
+  re-inserts a standard component or reverses a connected-sum decomposition.
+\end{proof}
+
+\begin{theorem}[Simply connected spherical space forms]
+  \label{thm:simply-connected-spherical-space-form}
+  \lean{Poincare.Topology.simplyConnected_sphericalSpaceForm_diffeomorphic_sphere}
+  \notready
+  A simply connected spherical space form is diffeomorphic to $\Sthree$.
+\end{theorem}
+
+\begin{theorem}[$S^2$-bundles over $S^1$ are not simply connected]
+  \label{thm:s2-bundle-not-simply-connected}
+  \lean{Poincare.Topology.not_simplyConnected_s2BundleOverS1}
+  \notready
+  No $S^2$-bundle over $S^1$ is simply connected.
+\end{theorem}
+
+\begin{theorem}[Connected-sum sphere identity]
+  \label{thm:connected-sum-sphere-identity}
+  \lean{Poincare.Topology.connectedSum_sphere_identity}
+  The sphere $\Sthree$ is the identity object for connected sum in dimension 3.
+\end{theorem}
+
+\begin{theorem}[Simply connected endgame]
+  \label{thm:simply-connected-endgame}
+  \lean{Poincare.Topology.simplyConnected_morganTianConnectedSum_implies_sphere}
+  \uses{thm:simply-connected-spherical-space-form, thm:s2-bundle-not-simply-connected, thm:connected-sum-sphere-identity}
+  \notready
+  If $M$ is simply connected and diffeomorphic to a finite connected sum of
+  Morgan--Tian summands, then $M$ is diffeomorphic to $\Sthree$.
+\end{theorem}

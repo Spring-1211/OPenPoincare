@@ -1,0 +1,14 @@
+{
+  "name": "Poincare Lean Blueprint",
+  "image": "ghcr.io/leanprover-community/mathlib4/lean:latest",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "leanprover.lean4",
+        "ms-python.python",
+        "github.vscode-github-actions"
+      ]
+    }
+  },
+  "postCreateCommand": "lake update && lake exe cache get || true"
+}

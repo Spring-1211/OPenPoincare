@@ -1,0 +1,25 @@
+name: mathlib/API gap
+description: Track a missing or uncertain mathlib API dependency
+title: "[api-gap] "
+labels: ["api-gap", "mathlib", "needs-search"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Informal goal
+      description: What theorem/definition/API is needed?
+    validations:
+      required: true
+  - type: textarea
+    id: searches
+    attributes:
+      label: Search log
+      description: mathlib docs, LeanSearch, Moogle, GitHub code search, local `#check`/`#find`.
+    validations:
+      required: true
+  - type: textarea
+    id: fallback
+    attributes:
+      label: Proposed fallback/interface
+    validations:
+      required: true

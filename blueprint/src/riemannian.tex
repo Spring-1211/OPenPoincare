@@ -1,0 +1,25 @@
+\chapter{Riemannian geometry}
+
+\begin{definition}[Curvature conventions]
+  \label{def:curvature-conventions}
+  \lean{Poincare.Riemannian.CurvatureConvention, Poincare.Riemannian.curvatureConvention_MT}
+  The project fixes Riemann, Ricci and scalar curvature conventions before any
+  Ricci-flow evolution equation is accepted.
+\end{definition}
+
+\begin{theorem}[Bishop--Gromov comparison]
+  \label{thm:bishop-gromov}
+  \lean{Poincare.Riemannian.bishop_gromov_relativeVolume_statement}
+  \uses{def:curvature-conventions}
+  \notready
+  Relative volume comparison under a Ricci curvature lower bound.
+\end{theorem}
+
+\begin{theorem}[Cheeger--Gromov compactness]
+  \label{thm:cheeger-gromov-compactness}
+  \lean{Poincare.Riemannian.cheeger_gromov_compactness_smooth_statement}
+  \uses{thm:bishop-gromov}
+  \notready
+  Curvature derivative bounds and noncollapsing imply smooth subsequential
+  convergence of based Riemannian manifolds.
+\end{theorem}

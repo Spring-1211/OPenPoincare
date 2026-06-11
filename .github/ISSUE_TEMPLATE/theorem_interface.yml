@@ -1,0 +1,53 @@
+name: Theorem interface
+description: Track a pending theorem interface and its replacement plan
+title: "[interface] "
+labels: ["interface", "mathematics", "needs-review"]
+body:
+  - type: input
+    id: lean-name
+    attributes:
+      label: Lean declaration
+      placeholder: Poincare.Surgery.long_time_existence_with_surgery
+    validations:
+      required: true
+  - type: input
+    id: blueprint-label
+    attributes:
+      label: Blueprint label
+      placeholder: thm:long-time-surgery-flow
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Mathematical source locator
+      description: Book/paper/chapter/theorem/page and exact statement.
+    validations:
+      required: true
+  - type: textarea
+    id: statement
+    attributes:
+      label: Informal statement
+    validations:
+      required: true
+  - type: textarea
+    id: replacement
+    attributes:
+      label: Replacement plan
+      description: How this interface will be decomposed into smaller formal nodes.
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risk
+      options: [low, medium, high, extreme]
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Owner expertise
+      placeholder: Ricci flow with surgery / 3-manifold topology / Lean manifold API
+    validations:
+      required: true

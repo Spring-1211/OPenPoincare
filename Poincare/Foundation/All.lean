@@ -1,0 +1,5 @@
+import Poincare.Foundation.ProjectConventions
+import Poincare.Foundation.Pending
+import Poincare.Foundation.Dimension3
+import Poincare.Foundation.ClosedSmooth3Manifold
+import Poincare.Foundation.MathlibTarget

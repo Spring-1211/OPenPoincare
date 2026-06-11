@@ -1,0 +1,40 @@
+\chapter{Perelman reduced geometry}
+
+\begin{definition}[$\mathcal L$-length]
+  \label{def:L-length}
+  \lean{Poincare.Perelman.LLength}
+  Perelman's $\mathcal L$-length functional for paths in a Ricci flow background.
+\end{definition}
+
+\begin{definition}[Reduced volume]
+  \label{def:reduced-volume}
+  \lean{Poincare.Perelman.ReducedVolume}
+  Reduced volume is the weighted volume functional built from reduced length.
+\end{definition}
+
+\begin{theorem}[Reduced volume monotonicity]
+  \label{thm:reduced-volume-monotonicity}
+  \lean{Poincare.Perelman.reducedVolume_monotone}
+  \uses{def:L-length, def:reduced-volume}
+  \notready
+  Reduced volume is monotone along minimizing $\mathcal L$-geodesic transport on
+  the interval where the construction is defined.
+\end{theorem}
+
+\begin{theorem}[Perelman noncollapsing]
+  \label{thm:perelman-noncollapsing-with-surgery}
+  \lean{Poincare.Perelman.perelman_noncollapsing_generalized}
+  \uses{thm:reduced-volume-monotonicity}
+  \notready
+  Reduced volume estimates imply $\kappa$-noncollapsing for the generalized flow
+  and, after parameter control, for flows with surgery.
+\end{theorem}
+
+\begin{theorem}[Canonical neighborhoods]
+  \label{thm:canonical-neighborhood-theorem}
+  \lean{Poincare.Perelman.canonicalNeighborhood_from_kappaLimit}
+  \uses{thm:perelman-noncollapsing-with-surgery, thm:hamilton-compactness}
+  \notready
+  High-curvature points in three-dimensional flows with the required controls are
+  modeled by $\kappa$-solutions and hence have canonical neighborhoods.
+\end{theorem}

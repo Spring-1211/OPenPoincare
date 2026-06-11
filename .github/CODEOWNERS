@@ -1,0 +1,10 @@
+# Replace placeholders after creating the GitHub organization/team structure.
+/Poincare/Foundation/        @OWNER/lean-maintainers
+/Poincare/Topology/          @OWNER/topology-reviewers
+/Poincare/Riemannian/        @OWNER/geometry-reviewers
+/Poincare/RicciFlow/         @OWNER/geometry-reviewers
+/Poincare/Perelman/          @OWNER/geometry-reviewers
+/Poincare/Surgery/           @OWNER/surgery-reviewers
+/Poincare/Extinction/        @OWNER/extinction-reviewers
+/blueprint/                  @OWNER/blueprint-maintainers
+/scripts/                    @OWNER/infra-maintainers

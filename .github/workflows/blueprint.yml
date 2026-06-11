@@ -1,0 +1,22 @@
+name: Blueprint
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+    branches: ["main", "master"]
+  workflow_dispatch:
+
+jobs:
+  blueprint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y graphviz libgraphviz-dev texlive-latex-base texlive-latex-extra texlive-fonts-recommended latexmk
+      - name: Install leanblueprint
+        run: python3 -m pip install --upgrade pip leanblueprint
+      - name: Build blueprint web
+        run: leanblueprint web

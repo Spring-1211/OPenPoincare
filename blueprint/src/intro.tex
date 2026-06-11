@@ -1,0 +1,41 @@
+\chapter{Overview}
+
+This blueprint is a proof-engineering contract for a long-term Lean 4
+formalization of the three-dimensional smooth Poincar\'e conjecture. The route is
+organized around the Morgan--Tian exposition of Perelman's proof: long-time Ricci
+flow with surgery, finite-time extinction, topological analysis of surgery, and
+the simply connected endgame.
+
+\begin{theorem}[Smooth three-dimensional Poincar\'e conjecture]
+  \label{thm:poincare-three-smooth}
+  \lean{Poincare.poincare_three_smooth_project, SimplyConnectedSpace.nonempty_sdiffeomorph_sphere_three}
+  \uses{thm:morgan-tian-classification-interface, thm:simply-connected-endgame}
+  \notready
+  Let $M$ be a compact smooth simply connected 3-manifold. Then $M$ is
+  diffeomorphic to $\Sthree$.
+\end{theorem}
+
+\begin{proof}
+  Apply the Morgan--Tian classification theorem to $M$. Since $\piOne(M)$ is
+  trivial, the allowed connected-sum decomposition contains no nontrivial
+  spherical space-form factor and no $S^2$-bundle over $S^1$ factor. Thus every
+  factor is $\Sthree$, and a finite connected sum of copies of $\Sthree$ is
+  diffeomorphic to $\Sthree$.
+\end{proof}
+
+\begin{theorem}[Morgan--Tian connected-sum classification]
+  \label{thm:morgan-tian-classification-interface}
+  \lean{Poincare.MorganTian.classification_interface}
+  \uses{thm:long-time-surgery-flow, thm:finite-time-extinction, thm:extinction-to-connected-sum-classification}
+  \notready
+  Let $M$ be a closed connected smooth 3-manifold whose fundamental group is a
+  free product of finite groups and infinite cyclic groups. Then $M$ is
+  diffeomorphic to a connected sum of spherical space forms and $S^2$-bundles
+  over $S^1$.
+\end{theorem}
+
+\begin{proof}[Blueprint status]
+  Interface theorem corresponding to Morgan--Tian Theorem 0.1. It will be
+  replaced by long-time Ricci flow with surgery, finite-time extinction and the
+  topological analysis of surgery/removal transitions.
+\end{proof}

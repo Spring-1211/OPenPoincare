@@ -1,0 +1,4 @@
+Poincaré Lean 4 Formalization Blueprint
+Copyright 2026 Project contributors.
+
+This project is a Lean 4/mathlib formalization blueprint and contains original project scaffolding, documentation and interface statements. It depends on Lean and mathlib, which are distributed under their respective licenses.
